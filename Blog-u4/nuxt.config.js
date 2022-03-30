@@ -39,10 +39,10 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
-  // loading: {
-  //   color: 'DodgerBlue',
-  //   height: '10px',
-  //   continuous: false,
-  //   duration: 3000
-  // }
+  loading: {
+    color: 'blue',
+    height: '10px',
+    continuous: false,
+    // duration: 1000
+  }
 }
