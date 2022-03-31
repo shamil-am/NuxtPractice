@@ -37,7 +37,7 @@ export default {
   height: 200px ;
 }
 .card .card-text {
-  height: 5rem;
+  height: 8rem;
   overflow-y: scroll;
 }
 </style>

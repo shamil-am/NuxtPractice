@@ -1,27 +1,22 @@
 <template>
-  <PostDetail :singlePost="singlePost"/>
+  <PostDetail :singlePost="singlePost" />
 </template>
 
 <script>
 import PostDetail from "../../../components/post/PostDetail.vue";
+import axios from "axios";
 export default {
   components: {
     PostDetail,
   },
-
-  asyncData(context, callback) {
-    // paramsi alirig deye burda fetch ede bilerik sonra callback.
-    // console.log(context.params.id);
-    callback(null, {
-      singlePost: {
-        id: context.params.id,
-        title: "Demo Mount",
-        description: "lorem lorem lorem ",
-        countries: ["China", "Nepal"],
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Everest_kalapatthar.jpg/600px-Everest_kalapatthar.jpg",
-      },
-    });
+  async asyncData({ params }) {
+    const resp=await axios
+      .get(
+        `https://nuxtjs-blog-2666-default-rtdb.firebaseio.com/posts/${params.id}.json`
+      );
+    return {
+      singlePost: resp.data
+    };
   },
 };
 </script>

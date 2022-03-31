@@ -1,9 +1,8 @@
 <template>
   <div class="row">
-    <div class="col-12 col-md-6 offset-md-3">
-      <h1>Post Detail id: {{singlePost.id}}</h1>
+    <div class="col-12 col-md-6 offset-md-3 mt-3">
       <div class="card text-center">
-        <div class="card-header">{{singlePost.title}}</div>
+        <h3 class="card-header">{{singlePost.title}}</h3>
         <div class="card-body">
           <h5 class="card-title">Special title treatment</h5>
           <p class="card-text">

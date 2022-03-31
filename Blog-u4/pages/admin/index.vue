@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+  <div class="admin-main">
     <div
       class="
         col-12 col-md-2
