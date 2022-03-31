@@ -16,7 +16,11 @@ export default {
           "https://nuxtjs-blog-2666-default-rtdb.firebaseio.com/posts.json",
           newpost
         )
-        .then((res) => console.log(res));
+        .then((res) => {
+          if (res.status === 200) {
+            alert("saved!");
+          }
+        });
     },
   },
 };

@@ -36,7 +36,7 @@ export default {
   data() {
     return {
       post: {
-        id: null,
+        // id: null,
         title: null,
         image: null,
         description: null,
@@ -55,13 +55,19 @@ export default {
   methods: {
     submitPost() {
       this.$emit("submit", this.post);
+      this.post = {
+        // id: null,
+        title: null,
+        image: null,
+        description: null,
+      };
     },
   },
   created() {
     this.post = this.postfromprop
       ? this.postfromprop
       : {
-          id: new Date().getTime(),
+          // id: new Date().getTime(),
           title: null,
           image: null,
           description: null,
