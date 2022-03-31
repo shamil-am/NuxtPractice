@@ -1,15 +1,9 @@
 {
-  "AdminAddNewPost": {
-    "description": "Auto imported from components/admin/AddNewPost.vue"
-  },
   "HomeFooter": {
     "description": "Auto imported from components/Home/HomeFooter.vue"
   },
-  "CommonBanner": {
-    "description": "Auto imported from components/common/Banner.vue"
-  },
-  "CommonHeader": {
-    "description": "Auto imported from components/common/Header.vue"
+  "AdminAddNewPost": {
+    "description": "Auto imported from components/admin/AddNewPost.vue"
   },
   "Post": {
     "description": "Auto imported from components/post/Post.vue"
@@ -19,5 +13,11 @@
   },
   "PostList": {
     "description": "Auto imported from components/post/PostList.vue"
+  },
+  "CommonBanner": {
+    "description": "Auto imported from components/common/Banner.vue"
+  },
+  "CommonHeader": {
+    "description": "Auto imported from components/common/Header.vue"
   }
 }
