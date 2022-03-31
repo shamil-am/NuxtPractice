@@ -8,7 +8,7 @@
           {{ post.description }}
         </p>
         <div class="admin-actions" v-if="isAdmin">
-          <a href="#" class="btn btn-secondary">Edit</a>
+          <a href="#" class="btn btn-secondary" @click.prevent="$router.push(`/admin/${post.id}`)">Edit</a>
           <a href="#" class="btn btn-danger">X</a>
         </div>
         <a href="#" class="btn btn-primary" v-else @click.prevent="$router.push(`/posts/${post.id}`)">Preview</a>

@@ -3,42 +3,36 @@
     "name": "admin",
     "path": "/admin",
     "component": "/Users/shamil/Desktop/NuxtPractice/Blog-u4/pages/admin/index.vue",
-    "chunkName": "pages/admin/index",
-    "_name": "_ffc9be72"
+    "chunkName": "pages/admin/index"
   },
   {
     "name": "posts",
     "path": "/posts",
     "component": "/Users/shamil/Desktop/NuxtPractice/Blog-u4/pages/posts/index.vue",
-    "chunkName": "pages/posts/index",
-    "_name": "_4ca9c44b"
+    "chunkName": "pages/posts/index"
   },
   {
-    "name": "admin-newPost",
-    "path": "/admin/newPost",
-    "component": "/Users/shamil/Desktop/NuxtPractice/Blog-u4/pages/admin/newPost.vue",
-    "chunkName": "pages/admin/newPost",
-    "_name": "_4cbe4415"
+    "name": "admin-newpost",
+    "path": "/admin/newpost",
+    "component": "/Users/shamil/Desktop/NuxtPractice/Blog-u4/pages/admin/newpost.vue",
+    "chunkName": "pages/admin/newpost"
+  },
+  {
+    "name": "admin-id",
+    "path": "/admin/:id",
+    "component": "/Users/shamil/Desktop/NuxtPractice/Blog-u4/pages/admin/_id/index.vue",
+    "chunkName": "pages/admin/_id/index"
   },
   {
     "name": "posts-id",
     "path": "/posts/:id",
     "component": "/Users/shamil/Desktop/NuxtPractice/Blog-u4/pages/posts/_id/index.vue",
-    "chunkName": "pages/posts/_id/index",
-    "_name": "_1521c1b6"
-  },
-  {
-    "name": "posts-id-editPost",
-    "path": "/posts/:id/editPost",
-    "component": "/Users/shamil/Desktop/NuxtPractice/Blog-u4/pages/posts/_id/editPost.vue",
-    "chunkName": "pages/posts/_id/editPost",
-    "_name": "_51e89ed4"
+    "chunkName": "pages/posts/_id/index"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/shamil/Desktop/NuxtPractice/Blog-u4/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_513d6d72"
+    "chunkName": "pages/index"
   }
 ]

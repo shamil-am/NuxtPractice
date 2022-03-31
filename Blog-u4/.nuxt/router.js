@@ -6,9 +6,9 @@ import scrollBehavior from './router.scrollBehavior.js'
 
 const _ffc9be72 = () => interopDefault(import('../pages/admin/index.vue' /* webpackChunkName: "pages/admin/index" */))
 const _4ca9c44b = () => interopDefault(import('../pages/posts/index.vue' /* webpackChunkName: "pages/posts/index" */))
-const _4cbe4415 = () => interopDefault(import('../pages/admin/newPost.vue' /* webpackChunkName: "pages/admin/newPost" */))
+const _48e3dff5 = () => interopDefault(import('../pages/admin/newpost.vue' /* webpackChunkName: "pages/admin/newpost" */))
+const _3f588032 = () => interopDefault(import('../pages/admin/_id/index.vue' /* webpackChunkName: "pages/admin/_id/index" */))
 const _1521c1b6 = () => interopDefault(import('../pages/posts/_id/index.vue' /* webpackChunkName: "pages/posts/_id/index" */))
-const _51e89ed4 = () => interopDefault(import('../pages/posts/_id/editPost.vue' /* webpackChunkName: "pages/posts/_id/editPost" */))
 const _513d6d72 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -31,17 +31,17 @@ export const routerOptions = {
     component: _4ca9c44b,
     name: "posts"
   }, {
-    path: "/admin/newPost",
-    component: _4cbe4415,
-    name: "admin-newPost"
+    path: "/admin/newpost",
+    component: _48e3dff5,
+    name: "admin-newpost"
+  }, {
+    path: "/admin/:id",
+    component: _3f588032,
+    name: "admin-id"
   }, {
     path: "/posts/:id",
     component: _1521c1b6,
     name: "posts-id"
-  }, {
-    path: "/posts/:id/editPost",
-    component: _51e89ed4,
-    name: "posts-id-editPost"
   }, {
     path: "/",
     component: _513d6d72,

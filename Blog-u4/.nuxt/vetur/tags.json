@@ -2,8 +2,8 @@
   "HomeFooter": {
     "description": "Auto imported from components/Home/HomeFooter.vue"
   },
-  "AdminAddNewPost": {
-    "description": "Auto imported from components/admin/AddNewPost.vue"
+  "PostAddOrEditPost": {
+    "description": "Auto imported from components/post/AddOrEditPost.vue"
   },
   "Post": {
     "description": "Auto imported from components/post/Post.vue"

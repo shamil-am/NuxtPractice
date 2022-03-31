@@ -1,5 +1,5 @@
 export { default as HomeFooter } from '../../components/Home/HomeFooter.vue'
-export { default as AdminAddNewPost } from '../../components/admin/AddNewPost.vue'
+export { default as PostAddOrEditPost } from '../../components/post/AddOrEditPost.vue'
 export { default as Post } from '../../components/post/Post.vue'
 export { default as PostDetail } from '../../components/post/PostDetail.vue'
 export { default as PostList } from '../../components/post/PostList.vue'
