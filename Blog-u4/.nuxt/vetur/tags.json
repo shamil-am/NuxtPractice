@@ -2,6 +2,12 @@
   "HomeFooter": {
     "description": "Auto imported from components/Home/HomeFooter.vue"
   },
+  "CommonBanner": {
+    "description": "Auto imported from components/common/Banner.vue"
+  },
+  "CommonHeader": {
+    "description": "Auto imported from components/common/Header.vue"
+  },
   "PostAddOrEditPost": {
     "description": "Auto imported from components/post/AddOrEditPost.vue"
   },
@@ -13,11 +19,5 @@
   },
   "PostList": {
     "description": "Auto imported from components/post/PostList.vue"
-  },
-  "CommonBanner": {
-    "description": "Auto imported from components/common/Banner.vue"
-  },
-  "CommonHeader": {
-    "description": "Auto imported from components/common/Header.vue"
   }
 }

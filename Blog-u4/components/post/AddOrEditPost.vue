@@ -5,16 +5,16 @@
       <h1 v-else class="text-center">New post</h1>
       <form class="bg bg-warning p-3 mt-3">
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Post Title</label>
+          <label class="form-label">Post Title</label>
           <input class="form-control" v-model="post.title" />
         </div>
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Image URL</label>
+          <label class="form-label">Image URL</label>
           <input class="form-control" v-model="post.image" />
         </div>
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Description</label>
-          <textarea class="form-control" v-model="post.description" />
+          <label class="form-label">Description</label>
+          <textarea class="form-control" style="height: 8rem" v-model="post.description" />
         </div>
         <button
           type="submit"

@@ -1,26 +1,36 @@
 <template>
-  <AddOrEditPost role="edit" :postfromprop="loadedPost" />
+  <AddOrEditPost
+    role="edit"
+    :postfromprop="loadedPost"
+    @submit="updatePost($event)"
+  />
 </template>
 
 <script>
 import AddOrEditPost from "../../../components/post/AddOrEditPost.vue";
+import axios from "axios";
 export default {
   components: {
     AddOrEditPost,
   },
-  data() {
+  async asyncData(context) {
+    const response = await axios.get(
+      `https://nuxtjs-blog-2666-default-rtdb.firebaseio.com/posts/${context.params.id}.json`
+    );
+    if (response.statusText !== "OK") return;
     return {
-      // in a period we pass static
-      loadedPost: {
-        id: 1,
-        title: "Mount Everest",
-        description:
-          "Mount Everest is Earth's highest mountain above sea level, located in the Mahalangur Himal sub-range of the Himalayas. The China–Nepal border runs across its summit point",
-        countries: ["China", "Nepal"],
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Everest_kalapatthar.jpg/600px-Everest_kalapatthar.jpg",
-      },
+      loadedPost: response.data,
     };
+  },
+  methods: {
+    async updatePost(updatedPost) {
+      const response = await axios.put(
+        `https://nuxtjs-blog-2666-default-rtdb.firebaseio.com/posts/${this.$route.params.id}.json`,
+        updatedPost
+      );
+      if (response.statusText !== "OK") return;
+      this.$router.push("/");
+    },
   },
 };
 </script>
